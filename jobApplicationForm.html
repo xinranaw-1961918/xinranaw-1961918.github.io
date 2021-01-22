@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sales Job Application</title>
+</head>
+<body>
+    <div="mainContent">
+        <h1>Sales Job Application</h1>
+        <p>If you are interested in our company, please fill out the form.</p><br/>
+        <div class="formClass">
+                <form action="http://gclass.alexburner.com/formtest.php" method="post">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        First name: <input type="text" name="firstname"><br/><br/>
+                        Last name: <input type="text" name="lastname"><br/><br/>
+                        Email: <input type="email" name="_replyto"><br/><br/>
+                        Age: <select name="age"> <option value="undern 18">undern 18</option> <option value="18-30">18-30</option> <option value="30-40">30-40</option> <option value="40-60">40-60</option> <option value="60+">60+</option></select><br/>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>More Information</legend>
+                        <label>Are you legally able to be employed in this country?</label> 
+			            <input type="radio" name="legal" value="yes">Yes
+			            <input type="radio" name="legal" value="no">No<br/><br/><br/>
+                    
+                        <label>What type of position are you seeking? (check all that apply)</label>
+			    <ul>
+				    <li><input type="checkbox" name="position_pt" value="parttime">Part time</li>
+				    <li><input type="checkbox" name="position_ft" value="fulltime">Full time</li>
+				    <li><input type="checkbox" name="position_sl" value="seasonal">Seasonal</li>
+				    <li><input type="checkbox" name="position_tp" value="temporary">Temporary</li>
+			    </ul>
+                    </fieldset>
+                    
+                    
+                    <fieldset>
+                        <legend>Personal Statement</legend>
+                        <label>Please state the reason why the company hired you.</label><br>
+                        <textarea name="essay" rows="6" cols="60"></textarea>
+                    </fieldset>
+            
+                    
+                    <input type="submit" value="Submit form">
+                   
+
+                </form>
+    </div>
+</body>
+</html>
